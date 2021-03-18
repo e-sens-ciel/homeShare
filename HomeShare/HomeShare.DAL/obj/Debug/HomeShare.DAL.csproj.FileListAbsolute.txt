@@ -1,0 +1,6 @@
+C:\Users\MediaMonster\Desktop\HomeShare\HomeShare\HomeShare.DAL\bin\Debug\HomeShare.DAL.dll
+C:\Users\MediaMonster\Desktop\HomeShare\HomeShare\HomeShare.DAL\bin\Debug\HomeShare.DAL.pdb
+C:\Users\MediaMonster\Desktop\HomeShare\HomeShare\HomeShare.DAL\obj\Debug\HomeShare.DAL.csprojAssemblyReference.cache
+C:\Users\MediaMonster\Desktop\HomeShare\HomeShare\HomeShare.DAL\obj\Debug\HomeShare.DAL.csproj.CoreCompileInputs.cache
+C:\Users\MediaMonster\Desktop\HomeShare\HomeShare\HomeShare.DAL\obj\Debug\HomeShare.DAL.dll
+C:\Users\MediaMonster\Desktop\HomeShare\HomeShare\HomeShare.DAL\obj\Debug\HomeShare.DAL.pdb

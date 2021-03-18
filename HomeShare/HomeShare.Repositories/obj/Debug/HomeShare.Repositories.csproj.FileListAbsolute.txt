@@ -1,0 +1,15 @@
+C:\Users\MediaMonster\Desktop\HomeShare\HomeShare\HomeShare.Repositories\bin\Debug\HomeShare.Repositories.dll
+C:\Users\MediaMonster\Desktop\HomeShare\HomeShare\HomeShare.Repositories\bin\Debug\HomeShare.Repositories.pdb
+C:\Users\MediaMonster\Desktop\HomeShare\HomeShare\HomeShare.Repositories\bin\Debug\HomeShare.DAL.dll
+C:\Users\MediaMonster\Desktop\HomeShare\HomeShare\HomeShare.Repositories\bin\Debug\HomeShare.Entities.dll
+C:\Users\MediaMonster\Desktop\HomeShare\HomeShare\HomeShare.Repositories\bin\Debug\HomeShare.Models.dll
+C:\Users\MediaMonster\Desktop\HomeShare\HomeShare\HomeShare.Repositories\bin\Debug\Tools.dll
+C:\Users\MediaMonster\Desktop\HomeShare\HomeShare\HomeShare.Repositories\bin\Debug\HomeShare.DAL.pdb
+C:\Users\MediaMonster\Desktop\HomeShare\HomeShare\HomeShare.Repositories\bin\Debug\HomeShare.Entities.pdb
+C:\Users\MediaMonster\Desktop\HomeShare\HomeShare\HomeShare.Repositories\bin\Debug\HomeShare.Models.pdb
+C:\Users\MediaMonster\Desktop\HomeShare\HomeShare\HomeShare.Repositories\bin\Debug\Tools.pdb
+C:\Users\MediaMonster\Desktop\HomeShare\HomeShare\HomeShare.Repositories\obj\Debug\HomeShare.Repositories.csprojAssemblyReference.cache
+C:\Users\MediaMonster\Desktop\HomeShare\HomeShare\HomeShare.Repositories\obj\Debug\HomeShare.Repositories.csproj.CoreCompileInputs.cache
+C:\Users\MediaMonster\Desktop\HomeShare\HomeShare\HomeShare.Repositories\obj\Debug\HomeShare.Repositories.csproj.CopyComplete
+C:\Users\MediaMonster\Desktop\HomeShare\HomeShare\HomeShare.Repositories\obj\Debug\HomeShare.Repositories.dll
+C:\Users\MediaMonster\Desktop\HomeShare\HomeShare\HomeShare.Repositories\obj\Debug\HomeShare.Repositories.pdb

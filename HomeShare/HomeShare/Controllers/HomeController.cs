@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HomeShare.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,9 +9,11 @@ namespace HomeShare.Controllers
 {
     public class HomeController : Controller
     {
+        [HttpGet]
         public ActionResult Index()
         {
-            return View();
+            RegisterViewModel rvm = new RegisterViewModel();
+            return View(rvm);
         }
 
         public ActionResult About()
@@ -57,12 +60,7 @@ namespace HomeShare.Controllers
 
             return View();
         }
-        public ActionResult Register()
-        {
-            ViewBag.Message = "Your contact page.";
 
-            return View();
-        }
 
     }
 }

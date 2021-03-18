@@ -84,3 +84,13 @@ C:\Users\MediaMonster\Desktop\HomeShare\HomeShare\HomeShare\obj\Debug\HomeShare.
 C:\Users\MediaMonster\Desktop\HomeShare\HomeShare\HomeShare\obj\Debug\HomeShare.csproj.CopyComplete
 C:\Users\MediaMonster\Desktop\HomeShare\HomeShare\HomeShare\obj\Debug\HomeShare.dll
 C:\Users\MediaMonster\Desktop\HomeShare\HomeShare\HomeShare\obj\Debug\HomeShare.pdb
+C:\Users\MediaMonster\Desktop\HomeShare\HomeShare\HomeShare\bin\HomeShare.Models.dll
+C:\Users\MediaMonster\Desktop\HomeShare\HomeShare\HomeShare\bin\HomeShare.Repositories.dll
+C:\Users\MediaMonster\Desktop\HomeShare\HomeShare\HomeShare\bin\HomeShare.DAL.dll
+C:\Users\MediaMonster\Desktop\HomeShare\HomeShare\HomeShare\bin\HomeShare.Entities.dll
+C:\Users\MediaMonster\Desktop\HomeShare\HomeShare\HomeShare\bin\Tools.dll
+C:\Users\MediaMonster\Desktop\HomeShare\HomeShare\HomeShare\bin\HomeShare.Models.pdb
+C:\Users\MediaMonster\Desktop\HomeShare\HomeShare\HomeShare\bin\HomeShare.Repositories.pdb
+C:\Users\MediaMonster\Desktop\HomeShare\HomeShare\HomeShare\bin\HomeShare.DAL.pdb
+C:\Users\MediaMonster\Desktop\HomeShare\HomeShare\HomeShare\bin\HomeShare.Entities.pdb
+C:\Users\MediaMonster\Desktop\HomeShare\HomeShare\HomeShare\bin\Tools.pdb

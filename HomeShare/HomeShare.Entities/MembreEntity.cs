@@ -8,8 +8,8 @@ namespace HomeShare.Entities
 {
     public class MembreEntity
     {
-        private string /*_idMembre,*/ _nom, _prenom, _email, _pays, _telephone, _login, _password, _salt;
-
+        private string /*_idMembre,*/ _nom, _prenom, _email, _telephone, _login, _password, _salt;
+        private int _pays;
         //public string IdMembre
         //{
         //    get
@@ -62,7 +62,7 @@ namespace HomeShare.Entities
             }
         }
 
-        public string Pays
+        public int Pays
         {
             get
             {
@@ -126,5 +126,7 @@ namespace HomeShare.Entities
                 _salt = value;
             }
         }
+
+
     }
 }

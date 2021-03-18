@@ -1,0 +1,6 @@
+C:\Users\MediaMonster\Desktop\HomeShare\HomeShare\HomeShare.Entities\bin\Debug\HomeShare.Entities.dll
+C:\Users\MediaMonster\Desktop\HomeShare\HomeShare\HomeShare.Entities\bin\Debug\HomeShare.Entities.pdb
+C:\Users\MediaMonster\Desktop\HomeShare\HomeShare\HomeShare.Entities\obj\Debug\HomeShare.Entities.csprojAssemblyReference.cache
+C:\Users\MediaMonster\Desktop\HomeShare\HomeShare\HomeShare.Entities\obj\Debug\HomeShare.Entities.csproj.CoreCompileInputs.cache
+C:\Users\MediaMonster\Desktop\HomeShare\HomeShare\HomeShare.Entities\obj\Debug\HomeShare.Entities.dll
+C:\Users\MediaMonster\Desktop\HomeShare\HomeShare\HomeShare.Entities\obj\Debug\HomeShare.Entities.pdb

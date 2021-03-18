@@ -10,7 +10,8 @@ namespace HomeShare.Models
     public class MembreModel
     {
 
-        private string _idMembre, _nom, _prenom, _email, _pays, _telephone, _login, _password, _confirmPassword;
+        private string _idMembre, _nom, _prenom, _email, /*_pays, */_telephone, _login, _password, _confirmPassword;
+        private int _pays;
 
         //public string IdMembre
         //{
@@ -67,8 +68,8 @@ namespace HomeShare.Models
             }
         }
         [Required]
-        [MaxLength(50)]
-        public string Pays
+        //[MaxLength(50)]
+        public int Pays
         {
             get
             {
@@ -123,7 +124,7 @@ namespace HomeShare.Models
 
         [Required]
         [MaxLength(50)]
-        [Compare("MotDePasse", ErrorMessage = "Les mot de passe ne correspondent pas")]
+        [Compare("ConfirmPassword", ErrorMessage = "Les mot de passe ne correspondent pas")]
         public string ConfirmPassword
         {
             get
