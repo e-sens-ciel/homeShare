@@ -1,0 +1,84 @@
+17/03/2021 10:12:07 PM	Ce journal contient des informations sur l'importation du schéma dans le projet 'HomeShareDBASP' sur l'ordinateur 'ZOULI' par l'utilisateur 'MediaMonster'.
+17/03/2021 10:12:07 PM	L'importation du schéma de base de données a commencé.
+17/03/2021 10:12:20 PM	Collecte des informations d'identification à la base de données
+17/03/2021 10:12:20 PM	Collecte des options de la base de données
+17/03/2021 10:12:20 PM	Collecte des utilisateurs
+17/03/2021 10:12:20 PM	Collecte des rôles
+17/03/2021 10:12:20 PM	Collecte des rôles d'application
+17/03/2021 10:12:20 PM	Collecte des appartenances aux rôles
+17/03/2021 10:12:20 PM	Collecte des groupes de fichiers
+17/03/2021 10:12:20 PM	Collecte des catalogues de recherche en texte intégral
+17/03/2021 10:12:20 PM	Collecte des assemblys
+17/03/2021 10:12:20 PM	Collecte des certificats
+17/03/2021 10:12:20 PM	Collecte des clés asymétriques
+17/03/2021 10:12:20 PM	Collecte des clés symétriques
+17/03/2021 10:12:20 PM	Collecte des clés symétriques chiffrées
+17/03/2021 10:12:20 PM	Collecte des schémas
+17/03/2021 10:12:20 PM	Collecte des collections de schémas XML
+17/03/2021 10:12:20 PM	Collecte des types de données définis par l'utilisateur
+17/03/2021 10:12:20 PM	Collecte des types définis par l'utilisateur
+17/03/2021 10:12:20 PM	Collecte des types de tables
+17/03/2021 10:12:20 PM	Collecte des clés uniques des types de tables
+17/03/2021 10:12:20 PM	Collecte des clés primaires pour les types de tables
+17/03/2021 10:12:20 PM	Collecte d'index pour types de tables
+17/03/2021 10:12:20 PM	Collecte des contraintes de validation pour les types de tables
+17/03/2021 10:12:20 PM	Collecte des contraintes par défaut pour les types de tables
+17/03/2021 10:12:20 PM	Collecte des fonctions de partition
+17/03/2021 10:12:20 PM	Collecte des schémas de partition
+17/03/2021 10:13:00 PM	Collecte des fonctions
+17/03/2021 10:13:00 PM	Collecte de fonctions cryptées
+17/03/2021 10:13:00 PM	Collecte des agrégats
+17/03/2021 10:13:00 PM	Collecte des procédures
+17/03/2021 10:13:26 PM	Collecte de procédures cryptées
+17/03/2021 10:13:26 PM	Collecte des tables
+17/03/2021 10:13:26 PM	Collecte des clés primaires
+17/03/2021 10:13:26 PM	Collecte des contraintes uniques
+17/03/2021 10:13:26 PM	Collecte des clés étrangères
+17/03/2021 10:13:26 PM	Collecte des contraintes par défaut
+17/03/2021 10:13:40 PM	Collecte des contraintes de validation
+17/03/2021 10:13:40 PM	Collecte des vues
+17/03/2021 10:13:40 PM	Collecte de vues cryptées
+17/03/2021 10:13:40 PM	Collecte des index
+17/03/2021 10:13:40 PM	Collecte des statistiques
+17/03/2021 10:13:40 PM	Collecte des listes de mots vides d'index de recherche en texte intégral
+17/03/2021 10:13:40 PM	Collecte des listes de propriétés de recherche
+17/03/2021 10:13:40 PM	Collecte des propriétés de recherche
+17/03/2021 10:13:40 PM	Collecte des index de recherche en texte intégral
+17/03/2021 10:13:40 PM	Collecte des index de la banque de colonnes
+17/03/2021 10:13:40 PM	Collecte des index spatiaux
+17/03/2021 10:13:40 PM	Collecte des index XML
+17/03/2021 10:13:40 PM	Collecte d'index XML sélectifs
+17/03/2021 10:14:21 PM	Collecte de déclencheurs cryptés
+17/03/2021 10:14:21 PM	Collecte des déclencheurs
+17/03/2021 10:14:21 PM	Collecte des déclencheurs chiffrés et DDL CLR
+17/03/2021 10:14:21 PM	Collecte des DDL triggers
+17/03/2021 10:14:21 PM	Collecte des synonymes
+17/03/2021 10:14:21 PM	Collecte des valeurs par défaut
+17/03/2021 10:14:21 PM	Collecte des liaisons UDDT de contrainte de données
+17/03/2021 10:14:21 PM	Collecte des règles
+17/03/2021 10:14:21 PM	Collecte des liaisons UDDT de contrainte de données
+17/03/2021 10:14:21 PM	Collecte des types de messages
+17/03/2021 10:14:21 PM	Collecte des files d'attente
+17/03/2021 10:14:21 PM	Collecte des contrats
+17/03/2021 10:14:22 PM	Collecte des services
+17/03/2021 10:14:22 PM	Collecte des notifications d'événements
+17/03/2021 10:14:22 PM	Collecte des liaisons de service distant
+17/03/2021 10:14:22 PM	Collecte des priorités de Service Broker
+17/03/2021 10:14:22 PM	Collecte des signatures
+17/03/2021 10:14:22 PM	Collection des options de compression de données
+17/03/2021 10:14:22 PM	Collecte des types de séquences
+17/03/2021 10:14:22 PM	Collecte des stratégies de sécurité
+17/03/2021 10:14:22 PM	Collecter les clés de chiffrement de colonne
+17/03/2021 10:14:22 PM	Collecte des clés principales de colonne
+17/03/2021 10:14:22 PM	Collecte des sources de données externes
+17/03/2021 10:14:22 PM	Collecte des formats de fichier externes
+17/03/2021 10:14:22 PM	Collecte des tables externes
+17/03/2021 10:14:22 PM	Collection des propriétés étendues
+17/03/2021 10:14:29 PM	Collecte des informations d'identification
+17/03/2021 10:14:29 PM	Collecte des connexions
+17/03/2021 10:14:29 PM	Collecte des audits du serveur
+17/03/2021 10:14:30 PM	Analyse du projet à la recherche des éléments en double
+17/03/2021 10:14:30 PM	Fin du traitement des éléments en double
+17/03/2021 10:14:35 PM	Importation de la base de données terminée.
+17/03/2021 10:14:35 PM	Un résumé de l'opération d'importation a été enregistré à l'emplacement suivant : C:\Users\MediaMonster\Desktop\HomeShare\HomeShare\HomeShareDBASP\Importer les journaux de schémas\HomeShareDBASP_20210317091207.log.
+17/03/2021 10:14:35 PM	Cliquez sur Terminer pour continuer...

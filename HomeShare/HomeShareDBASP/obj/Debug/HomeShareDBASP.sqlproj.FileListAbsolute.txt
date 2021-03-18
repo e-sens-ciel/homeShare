@@ -1,0 +1,10 @@
+C:\Users\MediaMonster\Desktop\HomeShare\HomeShare\HomeShareDBASP\bin\Debug\HomeShareDBASP.dacpac
+C:\Users\MediaMonster\Desktop\HomeShare\HomeShare\HomeShareDBASP\bin\Debug\HomeShareDBASP.dll
+C:\Users\MediaMonster\Desktop\HomeShare\HomeShare\HomeShareDBASP\bin\Debug\HomeShareDBASP.pdb
+C:\Users\MediaMonster\Desktop\HomeShare\HomeShare\HomeShareDBASP\obj\Debug\HomeShareDBASP.sqlprojAssemblyReference.cache
+C:\Users\MediaMonster\Desktop\HomeShare\HomeShare\HomeShareDBASP\obj\Debug\Model.xml
+C:\Users\MediaMonster\Desktop\HomeShare\HomeShare\HomeShareDBASP\obj\Debug\refactor.xml
+C:\Users\MediaMonster\Desktop\HomeShare\HomeShare\HomeShareDBASP\obj\Debug\postdeploy.sql
+C:\Users\MediaMonster\Desktop\HomeShare\HomeShare\HomeShareDBASP\obj\Debug\predeploy.sql
+C:\Users\MediaMonster\Desktop\HomeShare\HomeShare\HomeShareDBASP\obj\Debug\HomeShareDBASP.dll
+C:\Users\MediaMonster\Desktop\HomeShare\HomeShare\HomeShareDBASP\obj\Debug\HomeShareDBASP.pdb
