@@ -1,20 +1,66 @@
 ﻿
+@model HomeShare.Areas.Membre.MembreViewModel
 @{
-    ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div class="inside-banner">
-    <div class="container">
-        <span class="pull-right">
-            @*<a href="~/Home/Index" class="btn btn-default">Retour Zone</a>*@
-            <a href="~/Home/Index" class="btn btn-danger">Logout</a>
+<div class="container">
+    <span class="pull-right">
+        <a href="~/Home/Index" class="btn btn-danger">Logout</a>
 
-        </span>
-        <h2>Zone Membre</h2>
-        <h2 class="text-center ">Welcome to your account</h2>
+    </span>
+    <h2>Zone Membre</h2>
+    <h2 class="text-center ">Welcome to your account </h2>
+
+    <form class="form-inline" role="form">
+        <a href="/Home/Biens"><button class="btn btn-success center-block" type="button"> Mes biens</button></a>
+        <a href="/Home/AjouterBien"><button class="btn btn-success center-block" type="button"> Ajouter un bien</button></a>
+        <a href="/Home/DemandeEchange"><button class="btn btn-success center-block" type="button"> Les demandes d'échange</button></a>
+
+    </form>
+
+    @foreach (HomeShare.Models.MembreModel item in Model.MembresVue)
+    {
+        <h1>@item.Nom</h1>
+        <h2>@item.Prenom</h2>
+    }
+    @*@foreach (HomeShare.Models.BienEchangeModel item in Model.Biens1)
+    {*@
+
+        <div class="row">
+            <div class="col-lg-4 col-sm-6">
+                <div class="properties">
+                    <div class="image-holder">
+                        <img src="/images/properties/1.jpg" class="img-responsive" alt="properties">
+                        <div class="status sold">Disponible</div>
+                    </div>
+                    <h4><a href="property-detail.php"></a></h4>
+                    <p class="price">Price: $234,900</p>
+                    <p></p>
+                    Nombre de personnes : <div class="listing-detail"><span data-toggle="tooltip" data-placement="bottom" data-original-title="Kitchen"></span> </div>
+                    <a class="btn btn-primary" href="property-detail.php">Séléctionner ce bien</a>
+                </div>
+            </div>
+        </div>
+
+
+        <br />
+        <br />
+        <br />
+        <br /><br /><br /><br /><br /><br /><br /><br /><br />
     </div>
 
+
+
+
+
+
+
+<div class="col-lg-3 col-sm-3">
+    <h4>Newsletter</h4>
+    <p>Get notified about the latest properties in our marketplace.</p>
+
 </div>
+
 
 

@@ -12,9 +12,10 @@ namespace HomeShare.Areas.Membre.Controllers
         public ActionResult Index()
         {
             //ViewBag.ZoneMembre = "active";
+            MembreViewModel mvm = new MembreViewModel();
             if (!Infra.SessionUtils.IsLogged) return RedirectToAction("Login", "Account", new { area = "" });
 
-            return View();
+            return View(mvm);
         }
 
         [HttpGet]
@@ -23,6 +24,14 @@ namespace HomeShare.Areas.Membre.Controllers
             Session.Abandon();
 
             return RedirectToAction("Index", "Home");
+        }
+
+        [HttpGet]
+        public ActionResult Biens()
+        {
+            Session.Abandon();
+
+            return View();
         }
     }
 }
