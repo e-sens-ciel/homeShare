@@ -13,18 +13,6 @@ namespace HomeShare.Models
         private string _idMembre, _nom, _prenom, _email, /*_pays, */_telephone, _login, _password, _confirmPassword;
         private int _pays;
 
-        //public string IdMembre
-        //{
-        //    get
-        //    {
-        //        return _idMembre;
-        //    }
-
-        //    set
-        //    {
-        //        _idMembre = value;
-        //    }
-        //}
         [Required]
         [MaxLength(50)]
         public string Nom
@@ -68,7 +56,7 @@ namespace HomeShare.Models
             }
         }
         [Required]
-        //[MaxLength(50)]
+        [MaxLength(50)]
         public int Pays
         {
             get

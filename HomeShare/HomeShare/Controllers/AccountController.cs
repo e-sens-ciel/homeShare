@@ -52,7 +52,7 @@ namespace HomeShare.Controllers
         public ActionResult Register()
         {
             RegisterViewModel rvm = new RegisterViewModel();
-            ViewBag.pays = new SelectList(rvm.paysModel, "Id", "Name");
+            //ViewBag.pays = new SelectList(rvm.paysModel, "Id", "Name");
             return View(rvm);
         }
 

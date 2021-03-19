@@ -56,7 +56,7 @@ namespace HomeShare.Repositories
         {
             Dictionary<string, object> p = new Dictionary<string, object>();
             p.Add("login", login);
-            return base.Get("Select * from [Membre] where login=@login", p).FirstOrDefault();
+            return base.Get("Select * from [Membre] where Login=@login", p).FirstOrDefault();
         }
         public bool Update(MembreEntity toUpdate)
         {
