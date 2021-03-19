@@ -9,11 +9,10 @@ namespace HomeShare.Controllers
 {
     public class HomeController : Controller
     {
-        [HttpGet]
         public ActionResult Index()
         {
-            RegisterViewModel rvm = new RegisterViewModel();
-            return View(rvm);
+            IndexViewModel ivm = new IndexViewModel();
+            return View(ivm);
         }
 
         public ActionResult About()
@@ -22,44 +21,46 @@ namespace HomeShare.Controllers
 
             return View();
         }
-        public ActionResult Agents()
+
+        [HttpPost]
+        public ActionResult Recherche(IndexViewModel ivm)
         {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
+            string bienRechercher = ivm.RequeteRecherche.ToString();
+            RechercheViewModel rvm = new RechercheViewModel(bienRechercher);
+            return View(rvm);
         }
-        public ActionResult Blog()
-        {
-            ViewBag.Message = "Your contact page.";
+        //public ActionResult Blog()
+        //{
+        //    ViewBag.Message = "Your contact page.";
 
-            return View();
-        }
-        public ActionResult BlogDetail()
-        {
-            ViewBag.Message = "Your contact page.";
+        //    return View();
+        //}
+        //public ActionResult BlogDetail()
+        //{
+        //    ViewBag.Message = "Your contact page.";
 
-            return View();
-        }
-        public ActionResult Buysalarent()
-        {
-            ViewBag.Message = "Your contact page.";
+        //    return View();
+        //}
+        //public ActionResult Buysalarent()
+        //{
+        //    ViewBag.Message = "Your contact page.";
 
-            return View();
-        }
+        //    return View();
+        //}
 
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
+        //public ActionResult Contact()
+        //{
+        //    ViewBag.Message = "Your contact page.";
 
-            return View();
-        }
+        //    return View();
+        //}
 
-        public ActionResult Propertydetail()
-        {
-            ViewBag.Message = "Your contact page.";
+        //public ActionResult Propertydetail()
+        //{
+        //    ViewBag.Message = "Your contact page.";
 
-            return View();
-        }
+        //    return View();
+        //}
 
 
     }

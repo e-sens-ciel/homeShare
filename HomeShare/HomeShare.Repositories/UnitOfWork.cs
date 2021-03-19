@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Tools;
 
 namespace HomeShare.Repositories
 {
@@ -13,14 +14,68 @@ namespace HomeShare.Repositories
     {
         IConcreteRepository<MembreEntity> _membreRepo;
         IConcreteRepository<PaysEntity> _paysRepo;
+        IConcreteRepository<BienEchangeEntity> _bienEchangeRepo;
+        IConcreteRepository<BienEchangeEntity> _biensRechercher;
+
 
 
         public UnitOfWork(string connectionString)
         {
             _membreRepo = new MembreRepository(connectionString);
             _paysRepo = new PaysRepository(connectionString);
+            _bienEchangeRepo = new BienEchangeRepository(connectionString);
+            _biensRechercher = new BienEchangeRepository(connectionString);
         }
-        
+
+        public MembreModel UserAuth(LoginModel mm)
+        {
+            MembreEntity ue = ((MembreRepository)_membreRepo).GetFromLogin(mm.Login);
+            if (ue == null) return null;
+            SecurityHelper sh = new SecurityHelper();
+            if (sh.VerifyHash(mm.Password, ue.Password, ue.Salt))
+            {
+                return new MembreModel()
+                {
+                    Login = ue.Login,
+                    Password = ue.Password,
+                };
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        /*-----Barre de recherche-----*/
+        public List<BienEchangeModel> GetBySearch(string recherche)
+        {
+            return ((BienEchangeRepository)_biensRechercher).GetBySearch(recherche)
+            .Select(bienFromDB =>
+            new BienEchangeModel()
+            {
+                IdBien = bienFromDB.IdBien,
+                Titre = bienFromDB.Titre,
+                DescCourte = bienFromDB.DescCourte,
+                DescLong = bienFromDB.DescLong,
+                NombrePerson = bienFromDB.NombrePerson,
+                Pays = bienFromDB.Pays,
+                Ville = bienFromDB.Ville,
+                Rue = bienFromDB.Rue,
+                Numero = bienFromDB.Numero,
+                CodePostal = bienFromDB.CodePostal,
+                Photo = bienFromDB.Photo,
+                AssuranceObligatoire = bienFromDB.AssuranceObligatoire,
+                IsEnabled = bienFromDB.IsEnabled,
+                DisabledDate = bienFromDB.DisabledDate,
+                Latitude = bienFromDB.Latitude,
+                Longitude = bienFromDB.Longitude,
+                IdMembre = bienFromDB.IdMembre,
+                DateCreation = bienFromDB.DateCreation
+            }
+            ).ToList();
+        }
+
+        /*------------Pays------------*/
         public PaysModel getPays(int id)
         {
             PaysEntity paysfromDB = _paysRepo.GetOne(id);
@@ -43,6 +98,36 @@ namespace HomeShare.Repositories
             ).ToList();
         }
 
+        /*------------Biens------------*/
+        public List<BienEchangeModel> getAllBiens()
+        {
+            return _bienEchangeRepo.Get()
+            .Select(bienFromDB =>
+            new BienEchangeModel()
+            {
+                IdBien = bienFromDB.IdBien,
+                Titre = bienFromDB.Titre,
+                DescCourte = bienFromDB.DescCourte,
+                DescLong = bienFromDB.DescLong,
+                NombrePerson = bienFromDB.NombrePerson,
+                Pays = bienFromDB.Pays,
+                Ville = bienFromDB.Ville,
+                Rue = bienFromDB.Rue,
+                Numero = bienFromDB.Numero,
+                CodePostal = bienFromDB.CodePostal,
+                Photo = bienFromDB.Photo,
+                AssuranceObligatoire = bienFromDB.AssuranceObligatoire,
+                IsEnabled = bienFromDB.IsEnabled,
+                DisabledDate = bienFromDB.DisabledDate,
+                Latitude = bienFromDB.Latitude,
+                Longitude = bienFromDB.Longitude,
+                IdMembre = bienFromDB.IdMembre,
+                DateCreation = bienFromDB.DateCreation
+            }
+            ).ToList();
+        }
+
+        /*------------User------------*/
         public bool CreateUser(MembreModel mm)
         {
             MembreEntity membreEntity = new MembreEntity()
@@ -57,5 +142,7 @@ namespace HomeShare.Repositories
             };
             return _membreRepo.Insert(membreEntity);
         }
+
+
     }
 }

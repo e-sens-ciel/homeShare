@@ -1,0 +1,60 @@
+﻿@model HomeShare.Models.LoginViewModel
+@{
+    ViewBag.Title = "Login";
+}
+
+<!-- banner -->
+@*<div class="inside-banner">
+    <div class="container">
+        <span class="pull-right">Home/ <a href="/Account/Register">Register</a> </span>
+        <h2>Login</h2>
+    </div>
+</div>*@
+<!-- banner -->
+<!-- Modal -->
+@*<div id="loginpop" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">*@
+<div class="row">
+    <div class="col-sm-6 login">
+        <h4>Se connecter</h4>
+        <form action="/Account/Login" method="post">
+            @Html.AntiForgeryToken()
+            <div class="form-group">
+                <label class="sr-only" for="exampleInputEmail2">Login</label>
+                <input class="form-control" name="Login" type="text" placeholder="E-mail / Username">
+                @Html.ValidationMessageFor(model => model.LoginModel1.Login, "", new { @class = "text-danger" })
+            </div>
+            <div class="form-group">
+                <label class="sr-only" for="exampleInputPassword2">Mot de passe</label>
+                <input class="form-control" name="Password" type="text" placeholder="Password">
+                @Html.ValidationMessageFor(model => model.LoginModel1.Password, "", new { @class = "text-danger" })
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox"> Remember me
+                </label>
+            </div>
+            <button type="submit" class="btn btn-success">Sign in</button>
+        </form>
+    </div>
+    <div class="col-sm-6">
+        <h4>Inscrivez-vous</h4>
+        <p>Pas encore inscrits? Ne perdez plus de temps! Rejoignez-nous</p>
+        <a href="/Account/Register"><i class="fa fa-shopping-cart"></i>INSCRIVEZ-VOUS</a>
+
+    </div>
+
+</div>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+@*</div>
+        </div>
+    </div>*@
+<!-- /.modal -->

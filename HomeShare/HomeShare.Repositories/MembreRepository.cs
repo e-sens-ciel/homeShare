@@ -17,7 +17,8 @@ namespace HomeShare.Repositories
 
         public List<MembreEntity> Get()
         {
-            throw new NotImplementedException();
+            string requete = "Select * from Membre";
+            return base.Get(requete);
         }
 
         public MembreEntity GetOne(int PK)
@@ -51,7 +52,12 @@ namespace HomeShare.Repositories
            ,@Salt)";
             return base.Insert(toInsert, requete);
         }
-
+        public MembreEntity GetFromLogin(string login)
+        {
+            Dictionary<string, object> p = new Dictionary<string, object>();
+            p.Add("login", login);
+            return base.Get("Select * from [Membre] where login=@login", p).FirstOrDefault();
+        }
         public bool Update(MembreEntity toUpdate)
         {
             throw new NotImplementedException();

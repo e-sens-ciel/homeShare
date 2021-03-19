@@ -129,6 +129,9 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Infra\SessionUtils.cs" />
+    <Compile Include="Models\IndexViewModel.cs" />
+    <Compile Include="Models\LoginViewModel.cs" />
+    <Compile Include="Models\RechercheViewModel.cs" />
     <Compile Include="Models\RegisterViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -221,6 +224,9 @@
     <Content Include="Views\Home\Buysalarent.cshtml" />
     <Content Include="Views\Home\Propertydetail.cshtml" />
     <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Shared\_slider.cshtml" />
+    <Content Include="Views\Home\Recherche.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

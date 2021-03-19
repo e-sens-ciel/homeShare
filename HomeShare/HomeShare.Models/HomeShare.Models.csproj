@@ -42,9 +42,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BienEchangeModel.cs" />
+    <Compile Include="ClientModel.cs" />
+    <Compile Include="LoginModel.cs" />
     <Compile Include="MembreModel.cs" />
     <Compile Include="PaysModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SliderModel.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

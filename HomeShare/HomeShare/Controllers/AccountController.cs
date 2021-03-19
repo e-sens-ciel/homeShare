@@ -4,7 +4,7 @@ using HomeShare.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
-using System.Linq;
+using System.Linq; 
 using System.Web;
 using System.Web.Mvc;
 
@@ -15,6 +15,37 @@ namespace HomeShare.Controllers
     {
         UnitOfWork uow = new UnitOfWork(ConfigurationManager.ConnectionStrings["Cnstr"].ConnectionString);
 
+        [HttpGet]
+        public ActionResult Login()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Login(LoginModel lm)
+        {
+            if (ModelState.IsValid)
+            {
+                MembreModel mm = uow.UserAuth(lm);
+                if (mm == null)
+                {
+                    ViewBag.Error = "Erreur Login/Password";
+                    return View();
+                }
+                else
+                {
+                    SessionUtils.IsLogged = true;
+                    SessionUtils.ConnectedUser = mm;
+                    return RedirectToAction("Index", "Home", new { area = "Membre" });
+
+                }
+            }
+            else
+            {
+                return View();
+            }
+        }
 
 
         [HttpGet]

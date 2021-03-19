@@ -14,6 +14,7 @@ namespace HomeShare.Models
         public MembreModel membreModel { get; set; }
         public List<PaysModel> paysModel { get; set; }
 
+
         public RegisterViewModel()
         {
             paysModel = uow.getAllPays();
