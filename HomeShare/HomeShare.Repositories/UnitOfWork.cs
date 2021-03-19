@@ -45,7 +45,18 @@ namespace HomeShare.Repositories
                 return null;
             }
         }
-
+        public BienEchangeModel GetBien(int id)
+        {
+            BienEchangeEntity bienforDB = _bienEchangeRepo.GetOne(id);
+            BienEchangeModel bienforCtrl = new BienEchangeModel();
+            bienforCtrl.Titre = bienforDB.Titre;
+            bienforCtrl.NombrePerson = bienforDB.NombrePerson;
+            bienforCtrl.DescLong = bienforDB.DescLong;
+            bienforCtrl.Pays = bienforDB.Pays;
+            bienforCtrl.Photo = bienforDB.Photo;
+            bienforCtrl.IdMembre = bienforDB.IdMembre;
+            return bienforCtrl;
+        }
         /*-----Barre de recherche-----*/
         public List<BienEchangeModel> GetBySearch(string recherche)
         {

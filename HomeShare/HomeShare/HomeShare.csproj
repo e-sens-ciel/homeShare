@@ -133,6 +133,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Infra\SessionUtils.cs" />
+    <Compile Include="Models\BienDetailViewModel.cs" />
     <Compile Include="Models\IndexViewModel.cs" />
     <Compile Include="Models\LoginViewModel.cs" />
     <Compile Include="Models\RechercheViewModel.cs" />
@@ -226,10 +227,8 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Agents.cshtml" />
-    <Content Include="Views\Home\Blog.cshtml" />
-    <Content Include="Views\Home\BlogDetail.cshtml" />
     <Content Include="Views\Home\Buysalarent.cshtml" />
-    <Content Include="Views\Home\Propertydetail.cshtml" />
+    <Content Include="Views\Home\BienDetail.cshtml" />
     <Content Include="Views\Account\Register.cshtml" />
     <Content Include="Views\Account\Login.cshtml" />
     <Content Include="Views\Shared\_slider.cshtml" />

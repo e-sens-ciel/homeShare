@@ -29,6 +29,13 @@ namespace HomeShare.Controllers
             RechercheViewModel rvm = new RechercheViewModel(bienRechercher);
             return View(rvm);
         }
+
+        [HttpGet]
+        public ActionResult BienDetail(int id)
+        {
+            BienDetailViewModel bdwm = new BienDetailViewModel(id);
+            return View(bdwm);
+        }
         //public ActionResult Blog()
         //{
         //    ViewBag.Message = "Your contact page.";

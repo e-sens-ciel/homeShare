@@ -31,7 +31,9 @@ namespace HomeShare.Repositories
         }
         public BienEchangeEntity GetOne(int PK)
         {
-            throw new NotImplementedException();
+            string requete = "Select * from BienEchange where IdBien =" + PK;
+
+            return base.GetOne(PK, requete);
         }
 
         public bool Insert(BienEchangeEntity toInsert)
